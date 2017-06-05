@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rc.carduino.fragment.ControllerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/controllerMargin" >
+
+        <ImageButton
+            android:id="@+id/rc_button_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:elevation="4dp"
+            android:src="@drawable/ic_button_up"
+            android:layout_above="@+id/rc_button_right"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/controllerButtonMargin"/>
+
+        <ImageButton
+            android:id="@+id/rc_button_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_alignStart="@+id/rc_button_up"
+            android:layout_below="@+id/rc_button_left"
+            android:src="@drawable/ic_button_down"
+            android:background="@null"
+            android:layout_marginTop="@dimen/controllerButtonMargin"
+            />
+
+        <ImageButton
+            android:id="@+id/rc_button_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:elevation="4dp"
+            android:src="@drawable/ic_button_left"
+            android:layout_below="@+id/rc_button_up"
+            android:layout_toStartOf="@+id/rc_button_up"
+            android:layout_marginEnd="@dimen/controllerButtonMargin"/>
+
+        <ImageButton
+            android:id="@+id/rc_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:background="@null"
+            android:src="@drawable/ic_button_right"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/rc_button_up"
+            android:layout_marginStart="@dimen/controllerButtonMargin"/>
+
+        <Switch
+            android:id="@+id/rc_powerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/controllerMargin"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="@string/onOff" />
+
+    </RelativeLayout>
+</FrameLayout>

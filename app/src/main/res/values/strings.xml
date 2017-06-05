@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Carduino</string>
+
+    <!-- menu titles -->
+    <string name="preferences">Preferences</string>
+
+    <!-- fragment -->
+    <string name="ipAddress">IP Address</string>
+    <string name="portNumber">Port Number</string>
+    <string name="networkCategory">Network</string>
+
+    <!-- controller -->
+    <string name="onOff">On/Off</string>
+
+</resources>
